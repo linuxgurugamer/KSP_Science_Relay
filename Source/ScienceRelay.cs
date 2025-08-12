@@ -631,6 +631,15 @@ namespace ScienceRelay
 				}
 
                 IScienceDataTransmitter bestTransmitter = ScienceUtil.GetBestTransmitter(RelayData._source);// ScienceUtil.GetBestTransmitter(RelayData._source.FindPartModulesImplementing<IScienceDataTransmitter>());
+				if (bestTransmitter == null && CommNetScenario.CommNetEnabled)
+				{
+					var transmitterParts = RelayData._source.FindPartModulesImplementing<IScienceDataTransmitter>();
+					if (transmitterParts != null && transmitterParts.Count > 0)
+					{
+						RelayLog("Attempting deprecated GetBestTransmitter, parts count {0}", transmitterParts.Count);
+						bestTransmitter = ScienceUtil.GetBestTransmitter(transmitterParts);
+					}
+				}
 
 				if (bestTransmitter == null)
 				{
