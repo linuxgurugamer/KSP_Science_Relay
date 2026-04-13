@@ -8,6 +8,9 @@ rem VERSIONFILE is the name of the version file, usually the same as GAMEDATA,
 rem    but not always
 
 set H=%KSPDIR%
+
+rem set H=R:\KSP\KSP_1.12.5
+
 set GAMEDIR=ScienceRelay
 set GAMEDATA="GameData"
 set VERSIONFILE=%GAMEDIR%.version
@@ -22,4 +25,4 @@ copy /Y %VERSIONFILE% %GAMEDATA%\%GAMEDIR%
 xcopy /y /s /I %GAMEDATA%\%GAMEDIR% "%H%\GameData\%GAMEDIR%"
 xcopy /y /s /I %GAMEDATA%\%GAMEDIR% "%DP0%\GameData\%GAMEDIR%"
 
-pause
+rem pause

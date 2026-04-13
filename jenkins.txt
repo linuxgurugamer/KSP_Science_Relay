@@ -31,7 +31,7 @@
 1:ScienceRelay, ScienceRelay.version
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
-2:ScienceRelay,KSP_Science_Relay/ScienceRelay.csproj,ScienceRelay.version,GameData/ScienceRelay/Plugins
+2:ScienceRelay,Source/ScienceRelay.csproj,ScienceRelay.version,GameData/ScienceRelay/Plugins
 
 # 3:SOURCEFILE, DESTDIR
 3:ScienceRelay.version,GameData/ScienceRelay
