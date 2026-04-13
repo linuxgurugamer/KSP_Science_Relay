@@ -1,0 +1,9 @@
+Changelog
+
+1.0.7
+	Adoption by Linuxgurugamer
+	merged in changes from github user @erinacio:
+		Fallback to deprecated method when doing vessel-to-vessel relay without connection back to KSC
+	Added AssemblyVersion.tt
+	Added InstallChecker.cs
+	Added build files
