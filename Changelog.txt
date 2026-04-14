@@ -2,6 +2,7 @@ Changelog
 
 1.0.7
 	Adoption by Linuxgurugamer
+	Recompiled for 1.12.5
 	merged in changes from github user @erinacio:
 		Fallback to deprecated method when doing vessel-to-vessel relay without connection back to KSC
 	Added AssemblyVersion.tt
